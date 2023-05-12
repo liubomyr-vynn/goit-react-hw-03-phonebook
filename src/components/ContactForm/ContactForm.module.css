@@ -12,6 +12,10 @@
   border-bottom: 1px solid rgba(128, 128, 128, 0.37);
 }
 
+.form__container:first-child {
+  margin-bottom: 20px;
+}
+
 .form__label {
   display: flex;
   margin-right: auto;
@@ -24,7 +28,7 @@
 }
 
 .form__button {
-  margin-top: 10px;
+  margin-top: 20px;
   align-items: center;
   background-color: #0a66c2;
   border: 0;
