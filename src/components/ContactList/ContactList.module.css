@@ -1,6 +1,23 @@
-.list__button {
-  /* display: flex; */
-  /* margin-top: 10px; */
+.contact__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.contact__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.contact__button {
+  display: flex;
   align-items: center;
   background-color: #ec600f;
   border: 0;
@@ -13,7 +30,7 @@
     'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell,
     'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Lucida Grande', Helvetica, Arial, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   justify-content: center;
   line-height: 20px;
@@ -21,9 +38,7 @@
   min-height: 25px;
   min-width: 0px;
   overflow: hidden;
-  padding: 0px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 5px 10px;
   text-align: center;
   touch-action: manipulation;
   transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
@@ -32,12 +47,5 @@
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
-  margin-left: 15px;
-}
-
-li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
+  margin-left: 5px;
 }

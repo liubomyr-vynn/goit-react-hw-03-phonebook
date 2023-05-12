@@ -5,14 +5,16 @@ const ContactList = ({ contacts, handleDeleteContact }) => {
     handleDeleteContact(contactId);
   };
   return (
-    <div className="section">
+    <div className="section__list">
       <ul className="contact__list">
         {contacts.map(contact => (
-          <li key={contact.id}>
-            {contact.name}: {contact.number}
+          <li className="contact__item" key={contact.id}>
+            <p className="contact__text">
+              {contact.name}: {contact.number}
+            </p>
             <button
               type="button"
-              className="list__button"
+              className="contact__button"
               onClick={() => handleDelete(contact.id)}
             >
               Delete
